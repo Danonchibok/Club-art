@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/texture.jpg);
+}
+
+.container {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    overflow: hidden;
+}
+
+.section {
+    width: 100%;
+    margin: 5% 0;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    padding: 3% 0;
+}
+
+.portret {
+    border-radius: 25px;
+    width: 45%;
+}
+
+.text {
+    margin: auto 5%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.facts-item {
+    padding: 3% 0;
+}
+
+.facts {
+    margin-bottom: -20px;
+    color: white;
+    background: url(../images/profile/brig_mercuriy1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media(max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .portret {
+        margin: auto;
+        width: 70%;
+    }
+    ul {
+        padding-inline-start: 5px;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/texture.jpg);
+}
+
+.container {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.img {
+    width: 100%;
+    margin: 5% 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+}

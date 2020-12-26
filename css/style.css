@@ -1,0 +1,336 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../images/texture.jpg);
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.main-nav {
+    margin: auto 10%;
+}
+
+.second-nav-section {
+    background: #56CCF2;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.secondary-nav {
+    margin: auto;
+}
+
+.main {
+    width: 100%;
+    height: 625px;
+    background: url(../images/image7_1.svg);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    background-size: cover;
+    padding-top: 75px;
+    display: flex;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main-title {
+    margin-left: 10%;
+    width: 30%;
+    color: #48a6c5;
+    position: absolute;
+}
+
+.headline {
+    font-size: 36px;
+    padding: 1%;
+}
+
+.second-title {
+    margin-top: 35px;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.button-request {
+    text-decoration: none;
+    border: 2px solid #56CCF2;
+    box-sizing: border-box;
+    padding: 0px 45px;
+    color: #ffffff;
+    margin: auto;
+    background: #56CCF2;
+    font-size: 26px;
+    margin-bottom: 8%;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.purpose {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: auto;
+    margin-left: 0;
+}
+
+.text-block {
+    width: 50%;
+}
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8%;
+}
+
+.directivity {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    background: url(../images/image61.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.directivity>.title,
+.directivity>.text-block,
+.afisha>.title {
+    color: white;
+}
+
+.lessons {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-lesson {
+    font-size: 24px;
+    list-style: none;
+}
+
+.item-lessons {
+    margin: 5%;
+}
+
+.afisha {
+    padding: 3% 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: url(../images/image5.svg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.afisha>.title {
+    position: absolute;
+}
+
+.image-info {
+    width: 100%;
+}
+
+.exposure {
+    width: 35%;
+    margin: 5%;
+    background-color: white;
+    margin-top: 8%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.list-info {
+    list-style: none;
+    padding: 0;
+}
+
+.item-info {
+    margin: 3%;
+}
+
+.detail {
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    padding: 3% 10%;
+    color: #ffffff;
+    background-color: #56CCF2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.price {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.prices {
+    padding-bottom: 5%;
+}
+
+.detail-info {
+    margin: auto 0;
+}
+
+.gallery {
+    padding: 10% 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.gallery>.title {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+.scroller-container {
+    max-width: 79%;
+    margin: auto;
+}
+
+.scroller {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.scroller ul {
+    width: 9999px;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    transition-property: transform;
+    transition-duration: 250ms;
+}
+
+.scroller li {
+    display: inline-block;
+}
+
+.scroller img {
+    height: 350px;
+    display: block;
+}
+
+@media (max-width:1140px) {
+    .afisha {
+        flex-direction: column;
+    }
+    .afisha>.title {
+        position: relative;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .exposure {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .detail {
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .exposure {
+        width: 250px;
+    }
+    .purpose {
+        flex-direction: column;
+    }
+    .directivity {
+        flex-direction: column;
+    }
+    .lessons {
+        flex-direction: column;
+    }
+    .text-block {
+        margin: auto;
+        width: 100%;
+    }
+    .list-lesson {
+        padding-inline-start: 0px;
+    }
+    .title {
+        margin: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .directivity>.title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .main-title {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .main {
+        justify-content: center;
+    }
+    .scroller img {
+        height: 300px;
+    }
+    .scroller {
+        height: 300px;
+    }
+}
+
+@media(max-width: 380px) {
+    .headline {
+        font-size: 30px;
+    }
+    .button-request {
+        margin-bottom: 150px;
+    }
+}
+
+@media(max-width:320px) {
+    .directivity .title,
+    .title {
+        text-align: center;
+        font-size: 25px;
+    }
+    .text,
+    .list-lesson {
+        font-size: 18px;
+    }
+    .scroller img {
+        height: 200px;
+    }
+    .scroller {
+        height: 200px;
+    }
+}

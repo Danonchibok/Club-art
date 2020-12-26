@@ -1,0 +1,196 @@
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #56CCF2;
+}
+
+.button-login {
+    margin-left: 40px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    padding: 10px 45px;
+    color: #000000;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    z-index: 99999;
+}
+
+.header-list {
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
+
+.header-list li {
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80px;
+    align-items: center;
+}
+
+.menu-container {
+    width: 100%;
+}
+
+.menu-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-list {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.header-burger {
+    display: none;
+}
+
+
+/* Бургер меню*/
+
+@media(max-width:893px) {
+    .header-list li {
+        margin: 0;
+    }
+    .login-list {
+        flex-direction: column;
+        text-align: right;
+    }
+    .header-list {
+        flex-direction: column;
+        text-align: right;
+    }
+    .item-login {
+        margin-bottom: 25px;
+    }
+    .button-login {
+        margin-left: 0;
+        text-decoration: none;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        color: #000000;
+        background: #56CCF2;
+        text-align: center;
+        line-height: 25px;
+    }
+    .logo {
+        display: inline-block;
+        position: absolute;
+    }
+    .conteiner {
+        justify-content: inherit;
+        display: block;
+        width: 80%;
+        padding-top: 15px;
+        height: 65px;
+        position: relative;
+        z-index: 5;
+    }
+    .menu-container {
+        width: 100vw;
+        display: inline-block;
+        left: calc(50% - 50vw);
+        position: absolute;
+        top: -218px;
+        transition-property: top;
+        transition-duration: 0.5s;
+    }
+    .menu-block {
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+        /*transform: scaleX(0);*/
+        transform-origin: right;
+        background-color: #56CCF2;
+    }
+    .header-list,
+    .login-list {
+        text-align: center;
+        margin: 0;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    .login {
+        margin-top: 15px;
+    }
+    .active>.menu-container {
+        top: 80px;
+    }
+    .active>.header-burger {
+        right: calc(50% - 25px);
+    }
+    .header-burger {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        transition-property: right;
+        transition-duration: 0.5s;
+    }
+    .header-burger span,
+    .header-burger span::before,
+    .header-burger span::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -1px;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #000000;
+    }
+    .header-burger span::before,
+    .header-burger span::after {
+        content: '';
+        transition: 0.2s;
+        transform-origin: center;
+    }
+    .header-burger span::before {
+        transform: translateY(-5px);
+    }
+    .header-burger span::after {
+        transform: translateY(5px);
+    }
+    .active>.header-burger span {
+        height: 0;
+    }
+    .active>.header-burger span:before {
+        transform: rotate(45deg);
+    }
+    .active>.header-burger span::after {
+        transform: rotate(-45deg);
+    }
+}
+
+@media(max-width:320px) {
+    .conteiner {
+        width: 80%;
+    }
+}

@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+.second-nav-section {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.secondary-nav {
+    background-color: #56CCF2;
+    width: 100%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.second-nav-list {
+    display: flex;
+    padding-inline-start: 0;
+    justify-content: center;
+}
+
+.second-nav-item {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.second-nav-item-link {
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:790px) {
+    .secondary-nav {
+        /*display: none;*/
+        position: absolute;
+        z-index: 3;
+        background-color: #56CCF2;
+        width: 0%;
+        right: 0;
+        margin: 0;
+        height: 50%;
+        transform-origin: center;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .active>.secondary-nav {
+        width: 100%;
+        /*display: block;*/
+    }
+    .second-nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .second-nav-item {
+        line-height: 60px;
+        margin: 0;
+    }
+    .second-nav-item-link {
+        text-transform: uppercase;
+    }
+    .second-nav-menu-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        transition-property: right;
+        transition-duration: 0.5s;
+        z-index: 4;
+        margin-right: 10%;
+    }
+    .second-nav-menu-btn span,
+    .second-nav-menu-btn span::before,
+    .second-nav-menu-btn span::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -1px;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #000000;
+    }
+    .second-nav-menu-btn span::before,
+    .second-nav-menu-btn span::after {
+        content: '';
+        display: block;
+        transition: 0.5s;
+    }
+    .second-nav-menu-btn span::before {
+        transform: rotate(-35deg);
+        transform-origin: left bottom;
+        width: 10px;
+    }
+    .second-nav-menu-btn span::after {
+        transform: rotate(35deg);
+        width: 10px;
+        transform-origin: left top;
+    }
+    .active>.second-nav-menu-btn span {
+        height: 2px;
+    }
+    .active>.second-nav-menu-btn span:before {
+        transform: translateY(5px);
+        width: 20px;
+    }
+    .active>.second-nav-menu-btn span::after {
+        transform: translateY(-5px);
+        width: 20px;
+    }
+    .active>.second-nav-menu-btn {
+        right: calc(80%);
+        margin-right: 0;
+    }
+}
